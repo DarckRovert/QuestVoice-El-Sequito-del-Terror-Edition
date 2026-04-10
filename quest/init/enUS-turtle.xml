@@ -1,0 +1,8 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+  <Include file="..\db-turtle\enUS\items-turtle.lua" />
+  <Include file="..\db-turtle\enUS\objects-turtle.lua" />
+  <Include file="..\db-turtle\enUS\quests-turtle.lua" />
+  <Include file="..\db-turtle\enUS\units-turtle.lua" />
+  <Include file="..\db-turtle\enUS\zones-turtle.lua" />
+  <Include file="..\db-turtle\enUS\professions-turtle.lua" />
+</Ui>
