@@ -1,7 +1,20 @@
-# QuestVoice .gitignore
-# Orientado a LUA 5.0 / Turtle WoW
+# QuestVoice .gitignore [DIAMOND-TIER]
+# Repositorio de Documentación y Gobernanza
 
-# Logs y Cache Local
+# --- MOTOR DEL ADDON (Distribución vía Releases) ---
+/Libs/
+/core/
+/data/
+/map/
+/quest/
+/assets/
+/Textures/
+/Sounds/
+/scratch/
+/QuestVoice.toc
+/QuestVoice.toc.bak
+
+# --- Logs y Cache Local ---
 *.log
 *.bak
 *.old
@@ -9,21 +22,14 @@ Logs/
 WTF/
 Cache/
 Errors/
-Interface/AddOns/QuestVoice/scratch/
-data/generated/*.json
-data/generated/*.csv
 
-# [DIAMOND-TIER] Activos Pesados (Ignorados para GitHub)
-/Sounds/
-/data/generated/sounds/
-
-# Tooling y Entornos de IDE
+# --- Tooling y Entornos de IDE ---
 .vscode/
 .idea/
 .luacheckrc
 *.sublime-project
 
-# Archivos Temporales de OS
+# --- Archivos Temporales de OS ---
 .DS_Store
 Thumbs.db
 Desktop.ini

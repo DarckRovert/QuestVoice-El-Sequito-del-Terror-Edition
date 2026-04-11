@@ -1,48 +1,58 @@
 # QuestVoice [Séquito del Terror Edition]
+# 📚 Portal de Documentación y Gobernanza
 
 ![Diamond Tier Addon](https://img.shields.io/badge/Tier-Diamond-cyan?style=for-the-badge)
 ![Lua 5.0](https://img.shields.io/badge/Client-WoW%201.12-blue?style=for-the-badge)
 ![Turtle WoW](https://img.shields.io/badge/Server-Turtle%20WoW-green?style=for-the-badge)
-![License](https://img.shields.io/github/license/DarckRovert/QuestVoice-El-Sequito-del-Terror-Edition?style=for-the-badge)
+![Documentation Only](https://img.shields.io/badge/Status-Docs--Only-lightgrey?style=for-the-badge)
 
-**QuestVoice** es el motor narrativo y sistema de navegación definitivo para el ecosistema de **Turtle WoW**, portado con precisión técnica a World of Warcraft Vanilla (1.12) bajo estrictos estándares de rendimiento ("Diamond-Tier"). Esta herramienta reemplaza los aburridos muros de texto de las misiones brindando *VoiceOver* dinámico, junto a una interfaz libre de conflictos de memoria.
+**QuestVoice** es la solución definitiva de inmersión y navegación para **Turtle WoW**. Este repositorio actúa como el centro de control para la gobernanza, documentación técnica y manuales de usuario del proyecto. 
 
-## 💎 Arquitectura y Soluciones Críticas Implementadas
-
-1. **Aislamiento Nativo y Privatización `Ace3`**: 
-   Todo el set de bibliotecas de interfaz (como *AceGUI* y *AceConfigDialog*) fueron abandonados y refactorizados a marcos visuales crudos de WoW Vanilla (Lua 5.0). El Addon fue desconectado de métodos globales inestables para evitar choques en memoria con otros complementos macroestructurales de Turtle WoW.
-
-2. **Resolución de Silencio por Interrupción del Motor FMOD**: 
-   Reparamos un bug catastrófico oculto de los clientes antiguos (1.12): La supresión de falsos "mutes" mediante `SetCVar("EnableSound", 0)`, lo cual reseteaba el motor de audio subyacente impidiendo la reproducción de cualquier voz en milisegundos consecuentes. **QuestVoice ahora garantiza entrega y ejecución ininterrumpida** de colas de sonido de NPCs convencionales.
-
-3. **Limitaciones Técnicas con NPCs Custom**: 
-   Si lees el error en chat `Sound does not exist for: [Nombre]`, significa que el interceptor lógico del Addon capturó la conversación exitosamente, pero dicho NPC es un personaje *custom* introducido por Turtle WoW y **NO existe data** de Text-to-Speech (MP3 generados) proveída en las librerías `DataModules`. Para solucionarlo, deberás instalar un pack local extendido que incluya audios customizados para el texto modificado The Turtle Dev Team.
+> [!IMPORTANT]
+> **Repositorio de Solo Documentación:** Siguiendo los estándares de alto rendimiento "Diamond-Tier", el código fuente y los activos pesados del Addon se distribuyen exclusivamente de forma compilada para garantizar la estabilidad de los punteros de memoria en el cliente 1.12.
 
 ---
 
-## 🚀 Instalación Simple
+## 📥 Descarga e Instalación (Universal Mono-Bundle)
 
-1. Descarga el _Release_ estable.
-2. Descomprime la carpeta completa dentro del trayecto tu cliente: `E:\Turtle Wow\Interface\AddOns\QuestVoice\`
-3. Si lo requieres, descarga el **VoicePack (1.25 GB)** desde la sección de **[Releases](https://github.com/DarckRovert/QuestVoice-El-Sequito-del-Terror-Edition/releases)** y extráelo en la subcarpeta `data/generated/sounds/`.
-4. Disfruta de un Vanilla con vida.
+Para simplificar la experiencia del usuario, QuestVoice se distribuye ahora como un **Bundle Universal** único que contiene tanto el motor del addon como los paquetes de voces integrados (Inglés y Español).
 
-## 🔈 Descargas de Voces (Releases)
-Debido a que el paquete de audio fonético completo pesa más de 1 GB, el repositorio de código se mantiene ligero. Debes descargar el pack de sonidos por separado para habilitar el VoiceOver:
-- [📥 Descargar VoicePack v1.0 [1.25 GB]](https://github.com/DarckRovert/QuestVoice-El-Sequito-del-Terror-Edition/releases)
-
-## 🛠️ Comandos Diagnósticos Embebidos
-- `/vo` - Muestra la interfaz nativa del UI de Opciones.
-- `/voresume` - Reanuda forzadamente de la pausa en la cola actual.
-- `/voclear` - Vacía brutalmente y purga audios atascados del VoiceQueue.
-- `/votest` - Lanza una prueba técnica de la ruta del archivo asegurando que FMOD puede leer MP3.
+1. **Visita la sección de Releases**: Ve a [GitHub Releases](https://github.com/DarckRovert/QuestVoice-El-Sequito-del-Terror-Edition/releases).
+2. **Descarga el ZIP Maestro**: 
+   - `QuestVoice_Universal_Edition_v1.1.0.zip` (Incluye Motor + Audio EN/ES).
+3. **Instalación Directa**:
+   - Extrae el contenido directamente en: `\Interface\AddOns\`.
+   - La carpeta resultante debe ser **QuestVoice**. No se requieren pasos adicionales ni descargas externas de audio.
 
 ---
 
-## 📺 Ecosistema y Soporte
-Conecta con la comunidad para desarrollo en vivo, dudas de arquitectura, expansiones de packs TTS o simplemente saludar:
-- [🔴 DarckRovert en Twitch](https://twitch.tv/darckrovert)
-- [📘 Portal Open Source (QuestVoice Wiki Oficial)](https://github.com/DarckRovert/QuestVoice-El-Sequito-del-Terror-Edition/wiki)
+## 💎 Soluciones Críticas Implementadas (Diamond-Tier)
+
+1. **Fusión Monorepo Inteligente**: Hemos unificado los Voice Packs bilingües bajo un solo framework modular. El motor ahora detecta dinámicamente el idioma del cliente y selecciona los punteros de audio MP3 correspondientemente.
+2. **Aislamiento Ace3 Nativo**: Se ha eliminado la dependencia de bibliotecas globales. QuestVoice utiliza un entorno protegido (`setfenv`) para evitar conflictos de memoria con otros Addons macroestructurales.
+3. **Parche FMOD (CVar Rescue)**: Corregimos el crash silencioso del motor de audio de WoW 1.12 rescatando las llamadas a `Sound_EnableAllSound` cuando el sistema intenta vaciar la cola de reproducción.
+
+---
+
+## 📖 Documentación Técnica
+
+Contamos con una base de conocimientos completa en nuestra Wiki corporativa para desarrolladores y usuarios avanzados:
+
+- [🏗️ Arquitectura del Sistema](wiki/Arquitectura.md)
+- [📘 Manual de Usuario](wiki/Manual_Usuario.md)
+- [🛠️ Guía de Integración API](wiki/Guía_API.md)
+- [❓ Preguntas Frecuentes (FAQ)](wiki/FAQ.md)
+
+---
+
+## 📺 Soporte y Comunidad
+
+Conecta con el ecosistema de **DarckRovert** para obtener actualizaciones de packs de voces, sugerencias de nuevas funcionalidades o soporte técnico especializado:
+
+- [🔴 Twitch Oficial](https://twitch.tv/darckrovert)
+- [💻 Perfil de GitHub](https://github.com/DarckRovert)
+
+---
 
 ## 📜 Licencia
-Diseño y código amparados bajo los términos de permiso abierto expresados en la [Licencia MIT](LICENSE) (2026). Todos los emuladores, parches lógicos de compatibilidad para Cliente 1.12 y documentación fueron elaborados exclusivamente por **DarckRovert**.
+Este proyecto y su documentación están bajo la [Licencia MIT](LICENSE) (2026). Todos los derechos de los parches lógicos de compatibilidad y el diseño de la Suite Terror están reservados a **DarckRovert**.

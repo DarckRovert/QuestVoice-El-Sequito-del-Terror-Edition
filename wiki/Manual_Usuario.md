@@ -1,24 +1,41 @@
 # 📖 Manual de Usuario 
 
-**QuestVoice (Séquito del Terror Edition)** no es un Addon complejo de utilizar, pero posee robustos sistemas ocultos para gestionar la latencia sonora. Está pre-configurado para que al simplemente clickar a un Guardián u Dador de Misión ("Quest Giver"), los diálogos textuales se reemplacen automáticamente con un envolvente actor de voz.
+**QuestVoice (Universal Edition v1.1.0)** es una herramienta bilingüe diseñada para automatizar la narración de misiones en World of Warcraft (Vanilla 1.12).
 
-## Cómo Utilizar
-- Dirígete a cualquier **NPC (Personaje No-Jugador)** válido del entorno originario de Vanilla 1.12.
-- Interactúa usando Click Derecho.
-- La pantalla de "Detalles de Misión" silenciará los gritos monótonos o la ambientación general, e invocará tu Archivo de Voz (VoiceOver).
+## 🚀 Instalación y Configuración Bilingüe (Mono-Bundle)
 
-A diferencia de las versiones en las que el Addon se basó (Ej. PfQuest-Voice), este entorno fue refactorizado para operar sobre herramientas Vanilla Native y purgar librerías engorrosas, lo cual hace los menús limpios y ultra directos.
+QuestVoice se distribuye ahora como una **Universal Edition** única. Ya no es necesario descargar parches o packs de idiomas por separado; todo el ecosistema de audio (EN/ES) está pre-instalado en el núcleo.
 
-## Menú Transparente y Opciones
+### 1. Extracción Única
+Descarga el archivo `QuestVoice_Universal_Edition_v1.1.0.zip` desde la sección de **Releases** y descomprímelo directamente en tu carpeta de AddOns.
 
-Ingresa `/vo` directamente en la ventana de Chat del juego. Surgirá de inmediato la ventana negra central (Opciones). Podrás configurar:
-1. **Auto Toggle Dialog**: Silencia la típica línea cortísima del NPC para no encimarse a la voz generada.
-2. **Minimap Button**: Permite adherir o desaparecer el ícono fonético de la brújula redonda de World of Warcraft.
-3. **Sound Channel**: Decide a través de qué canal Vanilla se emitirá el Locutor (usualmente *Master*).
+### 2. Estructura de Directorios
+Tu estructura debe verse siempre así para garantizar el funcionamiento del motor:
+```text
+Interface/AddOns/
+└── QuestVoice/
+    ├── data/
+    │   ├── generated/                 <-- Diccionarios base (EN)
+    │   └── AI_VoiceOverData_Vanilla_esES/ <-- Diccionarios localizados (ES)
+    ├── core/
+    └── QuestVoice.toc
+```
 
-## Herramientas de Consola de Recuperación (Bypass Cmds)
-En caso presencies que el audio general del Addon o del juego "Mudo" o congelado (Posible por choques de temporizadores), utiliza en el chat los **Comandos Especiales de Diagnóstico (Globales):**
+### 3. Detección Automática de Idioma
+No requiere configuración manual. El Addon detectará el idioma de tu cliente de juego al iniciar sesión y seleccionará el Pack de Audio correspondiente (Español o Inglés) automáticamente.
 
-- `/voclear`: Elimina la cola completa guardada en la matriz "SoundQueue". Purifica el Addon si una voz vieja fantasma no dejaba avanzar los sonidos siguientes.
-- `/voresume`: Obliga al Addon a regresar de una Pausa explícita de "SoundQueue", re-disparando los temporizadores en el proceso actual.
-- `/votest`: Comando crítico para probar el Motor FMOD de la computadora. En rutinas de Turtle WoW, este comando fuerza al addon a leer la dirección física exacta de un MP3 alojado en la base de datos (QuestID: 6187) reproduciéndolo inmediatamente. Si `/votest` suena, este Addon es técnicamente puro.
+---
+
+## 🎮 Cómo Utilizar
+- Interactúa con cualquier NPC usando Click Derecho.
+- La pantalla de "Detalles de Misión" silenciará la ambientación monótona e invocará la voz del actor.
+- Ingresa `/vo` directamente en el chat para abrir el menú de opciones (Auto Toggle, Minimap Button, etc).
+
+---
+
+## 🛠️ Comandos de Diagnóstico (Globales)
+En caso de que el audio se detenga o se "congele", utiliza estos comandos para purgar la cola:
+
+- `/voclear`: Limpia la cola de sonidos. Útil si un audio se quedó trabado.
+- `/voresume`: Obliga al Addon a regresar de una pausa de la cola sonora.
+- `/votest`: Prueba crítica del motor FMOD. Si suena, el addon está correctamente instalado.
