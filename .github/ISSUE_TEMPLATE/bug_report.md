@@ -13,7 +13,7 @@ Describe detalladamente cuál es el fallo del Addon (Crasheos visuales de Lua, L
 Si tu reporte se enfoca en que un NPC específico en Turtle WoW no tiene voz, por favor rechaza este ticket. Esa falla solo indica que el paquete MP3 extraído de la base de Vanilla no tiene datos generados para dicho PNJ Custom.
 
 **Pasos para Reproducirlo**
-1. Escribe '/vo test' y comenta si se oyó algo.
+1. Escribe '/votest' y comenta si se oyó algo.
 2. Ingresa '/voclear'.
 3. Ve a...
 4. Clickea sobre...
