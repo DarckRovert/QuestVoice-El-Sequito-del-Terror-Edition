@@ -15,14 +15,16 @@
 
 ## 📥 Descarga e Instalación (Universal Mono-Bundle)
 
-Para simplificar la experiencia del usuario, QuestVoice se distribuye ahora como un **Bundle Universal** único que contiene tanto el motor del addon como los paquetes de voces integrados (Inglés y Español).
+> [!CAUTION]
+> **No descargues el repositorio como ZIP** (botón verde "Code"). Ese archivo NO contiene los datos de audio necesarios. **Descarga siempre desde la sección de [Releases](https://github.com/DarckRovert/QuestVoice-El-Sequito-del-Terror-Edition/releases).**
 
-1. **Visita la sección de Releases**: Ve a [GitHub Releases](https://github.com/DarckRovert/QuestVoice-El-Sequito-del-Terror-Edition/releases).
-2. **Descarga el ZIP Maestro**: 
-   - `QuestVoice_Universal_Edition_v1.1.0.zip` (Incluye Motor + Audio EN/ES).
-3. **Instalación Directa**:
-   - Extrae el contenido directamente en: `\Interface\AddOns\`.
-   - La carpeta resultante debe ser **QuestVoice**. No se requieren pasos adicionales ni descargas externas de audio.
+1. **Descarga el ZIP Maestro**: 
+   - Busca el último archivo en Releases: `QuestVoice_Universal_Edition_v1.1.x.zip`.
+2. **Instalación Directa**:
+   - Extrae el contenido en: `\World of Warcraft\Interface\AddOns\`.
+3. **Validación Crítica**:
+   - > [!IMPORTANT]
+     > La carpeta dentro de AddOns **debe llamarse exactamente `QuestVoice`**. Si al extraer se creó una carpeta con otro nombre (ej. `QuestVoice-v1.1`), **renómbrala a `QuestVoice`** o el addon no cargará.
 
 ---
 
