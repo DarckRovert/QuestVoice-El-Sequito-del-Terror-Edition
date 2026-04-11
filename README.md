@@ -19,7 +19,7 @@
 > **No descargues el repositorio como ZIP** (botón verde "Code"). Ese archivo NO contiene los datos de audio necesarios. **Descarga siempre desde la sección de [Releases](https://github.com/DarckRovert/QuestVoice-El-Sequito-del-Terror-Edition/releases).**
 
 1. **Descarga el ZIP Maestro**: 
-   - Busca el último archivo en Releases: `QuestVoice_Universal_Edition_v1.1.x.zip`.
+   - Busca el último archivo en Releases: `QuestVoice_v1.0.x.zip`.
 2. **Instalación Directa**:
    - Extrae el contenido en: `\World of Warcraft\Interface\AddOns\`.
 3. **Validación Crítica**:
