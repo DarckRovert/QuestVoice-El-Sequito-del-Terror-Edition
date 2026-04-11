@@ -16,15 +16,15 @@
 ## 📥 Descarga e Instalación (Universal Mono-Bundle)
 
 > [!CAUTION]
-> **No descargues el repositorio como ZIP** (botón verde "Code"). Ese archivo NO contiene los datos de audio necesarios. **Descarga siempre desde la sección de [Releases](https://github.com/DarckRovert/QuestVoice-El-Sequito-del-Terror-Edition/releases).**
+> **DESCARGA EXTERNA OBLIGATORIA**: Debido al tamaño masivo de los activos de audio (3.2 GB+), el archivo debe descargarse desde el servidor de alta velocidad en Google Drive. El botón verde de "Code" de GitHub NO contiene los audios.
 
 1. **Descarga el ZIP Maestro**: 
-   - Busca el último archivo en Releases: `QuestVoice_v1.0.x.zip`.
+   - [📥 **Descargar QuestVoice Universal Bundle (Google Drive)**](https://drive.google.com/file/d/1n02xoc2FtzRHnmmOIX70QyFT-tDsYUUP/view?usp=sharing)
 2. **Instalación Directa**:
-   - Extrae el contenido en: `\World of Warcraft\Interface\AddOns\`.
+   - Extrae el contenido directamente en: `\World of Warcraft\Interface\AddOns\`.
 3. **Validación Crítica**:
    - > [!IMPORTANT]
-     > La carpeta dentro de AddOns **debe llamarse exactamente `QuestVoice`**. Si al extraer se creó una carpeta con otro nombre (ej. `QuestVoice-v1.1`), **renómbrala a `QuestVoice`** o el addon no cargará.
+     > La carpeta dentro de AddOns **debe llamarse exactamente `QuestVoice`**. Si al extraer se creó una carpeta con otro nombre (ej. `QuestVoice-v1.0.x`), **renómbrala a `QuestVoice`** o el addon no podrá resolver las rutas de los archivos de sonido.
 
 ---
 
