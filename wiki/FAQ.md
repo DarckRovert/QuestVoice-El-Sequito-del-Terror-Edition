@@ -16,3 +16,8 @@ Para la extensa mayoría de las fallas auditivas que pudiesen generarse usando e
 *Pregunta: Escribí el comando de la antigua versión (PfQuest) y este Addon ignora la petición.*
 
 **Aclaratoria:** El comando original `play` únicamente funcionaba para "Des-pausar" un audio puesto previamente en espera en el banco (Queue). No es un "Reproductor" universal. Si deseas forzar una validación de audio técnico para detectar compatibilidad FMOD, hemos facilitado el comando puro: `/votest`.
+
+## > La flecha indicadora de misiones (Arrow) desapareció
+*Síntoma: La flecha que apunta a los objetivos dejó de mostrarse o su texto dice `???`.*
+
+**Causa y Solución:** Esto ocurría por una asincronía de carga entre `QuestVoice` y el addon `pfUI`. Las nuevas traducciones chinas de `pfUI` retrasaban la inyección de fuentes, provocando que la flecha colapsara al inicializarse antes de tiempo. En la versión **1.0.1** este problema ha sido mitigado mediante recarga dinámica de fuentes y verificaciones *anti-nil*. Si el error persiste, asegúrate de actualizar ambos addons (`pfUI` y `QuestVoice`) a su última versión.

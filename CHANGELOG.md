@@ -4,6 +4,10 @@ Todas las versiones desplegadas para la base de código documentarán aquí la e
 
 El formato del registro de versiones se basa en Convenciones Semánticas para mantener trazabilidad estructural.
 
+## [1.0.1] - 2026-05-27
+### Corregido
+- **[CRITICAL HOTFIX] pfUI Font Desync (Arrow Disappearance)**: Añadidos fallbacks de seguridad (`pfUI_config.global.font_size`) durante el Parse-Time del AddOn y una recarga dinámica inteligente de fuentes asiáticas (`ZYHei`, `FZXHLJW`) introducidas por las traducciones de Turtle WoW mediante `WoWTranslate.dll`. La flecha de misiones (Route Arrow) ahora renderiza el texto chino dinámicamente y previene crasheos si `pfUI` es modificado.
+
 ## [1.0.0] Diamond-Tier Native Optimization - 2026-04-10
 
 ### Añadido (`Added`)
