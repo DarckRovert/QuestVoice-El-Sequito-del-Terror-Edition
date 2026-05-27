@@ -1,4 +1,4 @@
-# QuestVoice [Séquito del Terror Edition]
+# QuestVoice [Séquito del Terror Edition] v1.0.1
 # 📚 Portal de Documentación y Gobernanza
 
 ![Diamond Tier Addon](https://img.shields.io/badge/Tier-Diamond-cyan?style=for-the-badge)
@@ -33,6 +33,7 @@
 1. **Fusión Monorepo Inteligente**: Hemos unificado los Voice Packs bilingües bajo un solo framework modular. El motor ahora detecta dinámicamente el idioma del cliente y selecciona los punteros de audio MP3 correspondientemente.
 2. **Aislamiento Ace3 Nativo**: Se ha eliminado la dependencia de bibliotecas globales. QuestVoice utiliza un entorno protegido (`setfenv`) para evitar conflictos de memoria con otros Addons macroestructurales.
 3. **Parche FMOD (CVar Rescue)**: Corregimos el crash silencioso del motor de audio de WoW 1.12 rescatando las llamadas a `Sound_EnableAllSound` cuando el sistema intenta vaciar la cola de reproducción.
+4. **Sincronización Dinámica de Fuentes**: (v1.0.1) Compatibilidad total con la inyección asíncrona de fuentes asiáticas (`WoWTranslate.dll`) del ecosistema `pfUI`, eliminando crasheos por desincronización de carga (`pfUI_config.global`).
 
 ---
 
