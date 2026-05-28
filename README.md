@@ -37,6 +37,13 @@
 
 ---
 
+## 🧠 WCS_Brain Integration [God-Tier]
+
+> [!IMPORTANT]
+> **Compatibilidad Neural Nativa:** Este AddOn expone sus eventos narrativos para ser analizados por **[WCS_Brain (El Núcleo Neuronal)](https://github.com/DarckRovert/WCS_Brain-v9.3.1-God-Tier)**. Tu mascota ahora es "consciente" del texto de la misión de QuestVoice, reaccionando de manera inmersiva a la trama (reaccionando a cacerías, recolecciones, etc.) en tiempo real.
+
+---
+
 ## 📖 Documentación Técnica
 
 Contamos con una base de conocimientos completa en nuestra Wiki corporativa para desarrolladores y usuarios avanzados:
