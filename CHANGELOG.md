@@ -4,6 +4,13 @@ Todas las versiones desplegadas para la base de código documentarán aquí la e
 
 El formato del registro de versiones se basa en Convenciones Semánticas para mantener trazabilidad estructural.
 
+## [1.0.3] - 2026-06-03
+### Añadido
+- **Soporte para clientes esMX**: Integración total del Locale `esMX` (Español de Latinoamérica) apuntando internamente a las bases de datos de `esES` para garantizar traducciones nativas y funcionales del motor de rastreo en servidores con parches hispanos como Turtle WoW.
+
+### Corregido
+- **[CRITICAL HOTFIX] Desaparición de flecha en español**: El módulo de `pfQuest` ahora intercepta el `questID` real provisto de forma nativa por `QuestVoice` mediante su hook en `GetQuestLogTitle`. Esto previene fallos en el rastreador (Tracker Arrow) causados por diferencias de codificación de texto, errores ortográficos o uso de caracteres especiales (`ñ`, `¿`, `¡`) entre la base de datos interna y los textos devueltos por el cliente en español.
+
 ## [1.0.2] - 2026-05-28
 ### Añadido
 - **🧠 Integración God-Tier (WCS_Brain)**: Los eventos narrativos de `QUEST_DETAIL` y `QUEST_GREETING` ahora se transmiten al motor neuronal `WCS_Brain`. Esto permite que tu mascota (Brujo/Cazador) entienda la misión que estás leyendo y reaccione contextualmente a las palabras clave (matar, cazar, proteger) mientras la voz se reproduce.

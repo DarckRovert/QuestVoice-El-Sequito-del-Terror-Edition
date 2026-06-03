@@ -1,4 +1,4 @@
-# QuestVoice [Séquito del Terror Edition] v1.0.1
+# QuestVoice [Séquito del Terror Edition] v1.0.3
 # 📚 Portal de Documentación y Gobernanza
 
 ![Diamond Tier Addon](https://img.shields.io/badge/Tier-Diamond-cyan?style=for-the-badge)
@@ -34,6 +34,7 @@
 2. **Aislamiento Ace3 Nativo**: Se ha eliminado la dependencia de bibliotecas globales. QuestVoice utiliza un entorno protegido (`setfenv`) para evitar conflictos de memoria con otros Addons macroestructurales.
 3. **Parche FMOD (CVar Rescue)**: Corregimos el crash silencioso del motor de audio de WoW 1.12 rescatando las llamadas a `Sound_EnableAllSound` cuando el sistema intenta vaciar la cola de reproducción.
 4. **Sincronización Dinámica de Fuentes**: (v1.0.1) Compatibilidad total con la inyección asíncrona de fuentes asiáticas (`WoWTranslate.dll`) del ecosistema `pfUI`, eliminando crasheos por desincronización de carga (`pfUI_config.global`).
+5. **Rastreador de Misiones Hispano 100% Preciso**: (v1.0.3) Integración del puente neural `GetQuestLogTitle -> VoiceQuestID` que elimina las fallas de la flecha guía (Arrow) al jugar en clientes en español (esES/esMX), saltándose por completo las limitaciones de codificación de texto y errores ortográficos de las bases de datos de Vanilla.
 
 ---
 
